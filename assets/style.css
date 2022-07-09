@@ -3,8 +3,8 @@ html {
 }
 
 nav {
-    position: relative;
-    z-index: 9;
+    position: fixed;
+    z-index: 99;
 }
 
 .nav-item:hover {
@@ -17,7 +17,6 @@ nav {
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
-    margin-top: -15vh;
     color: #F9F9F9;
     text-shadow: 1px 4px 8px rgba(111,103,103,1);
 }
@@ -47,6 +46,9 @@ nav {
 /* Responsive */
 
 @media screen and (min-width: 992px) {
+    .jumbotron{
+        margin-top: -15vh;
+    }
     .jumbotron .container .d-flex {
         width: 60%;
     }    
